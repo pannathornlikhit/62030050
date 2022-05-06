@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/IMAGES/IMAGE1.jpg');
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 5em;
+    color:white;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0 18px;
+}
+.menu ul li a{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header,.grid-card{
+    width: 50%;
+    position: relative;
+}
+.content .header{
+    color: white;
+    padding: 20px;
+}
+.content .header h3{
+    font-size: 5em;
+    letter-spacing: 55px;
+    color: orangered;
+    font-weight: bold;
+}
+.content .header h1{
+    font-size: 4em;
+}
+.content .header .p{
+    opacity: .6;
+}
+.vedio.box{
+    background-image: url(/IMAGES/IMAGE2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: .4s;
+    position: relative;
+}
+.content .box h2{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+}
+.content .box:hover{
+    transform: translate(-15px);
+}
+.header button{
+    border: solid 3px white;
+    background: none;
+    color: white;
+    font-size: 5em;
+    padding: 5px 15px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.header button:hover{
+    background: white;
+    color: black;
+}
